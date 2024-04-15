@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  bot:
+    build:
+      context: ./bot
+      dockerfile: Dockerfile
+    working_dir: /usr/src/bot/
+    volumes:
+      - ./bot:/usr/src/bot
+    env_file:
+      - ./.env
+    restart: always
