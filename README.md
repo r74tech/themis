@@ -1,1 +1,1 @@
-# discord_bot_template
+# themis
