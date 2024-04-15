@@ -1,5 +1,5 @@
 import time
-
+import discord
 from discord.ext import commands
 from discord.commands import Option, slash_command
 
@@ -11,7 +11,7 @@ class Admin(commands.Cog):
         self.bot = bot
 
     @slash_command(name="ping", description="BotのPingを返します")
-    async def ping(self, ctx):
+    async def ping(self, ctx: discord.ApplicationContext):
         start = time.time()
         msg = await ctx.respond("Pinging...")
         end = time.time()

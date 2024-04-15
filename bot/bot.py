@@ -22,5 +22,6 @@ bot = commands.Bot(
 
 bot.load_extension("cogs.Admin")
 bot.load_extension("cogs.CogManager")
+bot.load_extension("cogs.RoleManager")
 
 bot.run(config.TOKEN)
